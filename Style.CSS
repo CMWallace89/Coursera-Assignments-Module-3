@@ -1,13 +1,67 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section {
+  border: 1px solid #000;
+  background-color: #A999EB; /* Max Blue Purple */
+  padding: 15px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #D35E7F; /* Cinnamon Satin */
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 75%;
+}
+
+p {
+  margin-top: 25px;
+}
+
+/* Additional styles */
+.navbar-default {
+  background-color: #fff;
+}
+
+.navbar-toggle {
+  float: right;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  float: left;
+}
+
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #9BCDEF; /* BABY BLUE EYES */
+  background-color: #9BCDEF; /* Baby Blue Eyes */
   font-family: 'Playwrite DE VA', cursive;
 }
 
 /* Header */
 #header-nav {
-  background-color: #D7E97B; /* MANZ */
+  background-color: #D7E97B; /* Manz */
   border-radius: 0;
   border: 0;
 }
@@ -25,7 +79,7 @@ body {
 
 .navbar-brand h1 { /* Page Name */
   font-family: "Playwrite DE VA", cursive;
-  color: #D35E7F; /* CINNAMON SATIN */
+  color: #D35E7F; /* Cinnamon Satin */
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
@@ -55,7 +109,7 @@ body {
 }
 
 #nav-list a {
-  color: #D35E7F; /* CINNAMON SATIN */
+  color: #D35E7F; /* Cinnamon Satin */
   text-align: center;
 }
 
@@ -68,7 +122,7 @@ body {
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #D35E7F; /* CINNAMON SATIN */
+  border: 1px solid #D35E7F; /* Cinnamon Satin */
 }
 
 .navbar-header button.navbar-toggle {
@@ -78,8 +132,8 @@ body {
 /* End Header */
 
 .container .jumbotron {
-  box-shadow: 0 0 50px #A999EB; /* MAX BLUE PURPLE */
-  border: 2px solid #A999EB; /* MAX BLUE PURPLE */
+  box-shadow: 0 0 50px #A999EB; /* Max Blue Purple */
+  border: 2px solid #A999EB; /* Max Blue Purple */
 }
 
 /* Media Queries */
@@ -103,26 +157,41 @@ body {
   /* End Header */
   .container .jumbotron {
     background: url('../Images/Ny's Playhouse_992.jpg') no-repeat;
-    height: 558px;
+    height: 575px;
   }
 }
 
 /********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
+  .navbar-brand h1 {
+    font-size: 1.2em;
+  }
+
   .container .jumbotron {
-    background: url('../Coursera-Assignments-Module-3/Ny's Playhouse_768.jpg') no-repeat;
-    height: 432px;
+    background: url('../Images/Ny's Playhouse_768.jpg') no-repeat;
+    height: 375px;
+  }
+
+  .navbar-brand p {
+    font-size: .6em;
+    margin-top: 12px;
+  }
+
+  .navbar-brand p img {
+    height: 20px;
+  }
+
+  #collapsable-nav a {
+    font-size: 1.2em;
+  }
+
+  #collapsable-nav a span {
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
   }
 }
-
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
-  /* Header */
-  .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-  }
-
-  .navbar-brand h1 { /* Nyla's Playhouse */
-    padding-top: 10px;
-    font-size: 
