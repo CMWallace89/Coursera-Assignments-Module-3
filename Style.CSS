@@ -1,19 +1,19 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #9BCDEF;
+  background-color: #9BCDEF; /* BABY BLUE EYES */
   font-family: 'Playwrite DE VA', cursive;
 }
 
 /* Header */
 #header-nav {
-  background-color: #D7E97B;
+  background-color: #D7E97B; /* MANZ */
   border-radius: 0;
   border: 0;
 }
 
 #logo-img {
-  background: url('../Images/Nyla.jpg') no-repeat;
+  background: url('../Images/Ny's Playhouse.jpg') no-repeat;
   width: 150px;
   height: 150px;
   margin: 10px 15px 10px 0;
@@ -25,7 +25,7 @@ body {
 
 .navbar-brand h1 { /* Page Name */
   font-family: "Playwrite DE VA", cursive;
-  color: #D35E7F;
+  color: #D35E7F; /* CINNAMON SATIN */
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
@@ -39,14 +39,14 @@ body {
   text-decoration: none;
 }
 
-.navbar-brand p { /*Nyla cert */
+.navbar-brand p { /* Nyla cert */
   color: #000;
   text-transform: uppercase;
   font-size: .7em;
   margin-top: 15px;
 }
 
-.navbar-brand p span { /*Nyla Cert Pic */
+.navbar-brand p span { /* Nyla Cert Pic */
   vertical-align: middle;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 #nav-list a {
-  color: #951C49;
+  color: #D35E7F; /* CINNAMON SATIN */
   text-align: center;
 }
 
@@ -68,19 +68,25 @@ body {
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  border: 1px solid #D35E7F; /* CINNAMON SATIN */
 }
 
 .navbar-header button.navbar-toggle {
   clear: both;
   margin-top: -30px;
 }
+/* End Header */
+
+.container .jumbotron {
+  box-shadow: 0 0 50px #A999EB; /* MAX BLUE PURPLE */
+  border: 2px solid #A999EB; /* MAX BLUE PURPLE */
+}
 
 /* Media Queries */
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-   .container .jumbotron  {
-    background: url('../Images/Nyla.jpg') no-repeat;
+  .container .jumbotron {
+    background: url('../Images/Ny's Playhouse.jpg') no-repeat;
     height: 675px;
   }
 }
@@ -89,22 +95,22 @@ body {
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
-    background: url('../Images/Nyla_med.png') no-repeat;
+    background: url('../Images/Ny's Playhouse_med.png') no-repeat;
     width: 100%;
     height: 100px;
     margin: 5px 5px 5px 0;
   }
   /* End Header */
- .container .jumbotron  {
-    background: url('../Images/Nyla_992.jpg') no-repeat;
+  .container .jumbotron {
+    background: url('../Images/Ny's Playhouse_992.jpg') no-repeat;
     height: 558px;
   }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
- .container .jumbotron  {
-    background: url('../Images/Nyla_768.jpg') no-repeat;
+  .container .jumbotron {
+    background: url('../Coursera-Assignments-Module-3/Ny's Playhouse_768.jpg') no-repeat;
     height: 432px;
   }
 }
@@ -119,28 +125,4 @@ body {
 
   .navbar-brand h1 { /* Nyla's Playhouse */
     padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
-  }
-
-  .navbar-brand p { /* Nyla Cert */
-    font-size: .6em;
-    margin-top: 12px;
-  }
-
-  .navbar-brand p img { /* Nyla's Cert pic */
-    height: 20px;
-  }
-
-  #collapsable-nav a { /* Collapsed nav menu text */
-font-size: 1.2em;
-}
-#collapsable-nav a span { /* Collapsed nav menu glyph */
-font-size:1em;
-margin-right: 5px;
-}
- .container .jumbotron {
-margin-top: 30px;
-padding: 0;
-  }
-}
-
+    font-size: 
