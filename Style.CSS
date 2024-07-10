@@ -1,112 +1,66 @@
-/* Base styles */
 body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Playwrite DE VA", cursive;
+  font-family: 'Playwrite DE VA', cursive;
   background-color: #A999EB;
-color:#fff;
-}
-
-h1 {
-  margin-bottom: 20px;
-  text-align: center;
+  color: #D35E7F;
 }
 
 .section {
   border: 1px solid #000;
-  background-color: #A999EB; /* Max Blue Purple */
+  background-color: #fff;
   padding: 15px;
   margin-bottom: 30px;
   position: relative;
+  color: #000;
 }
 
 .section-title {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #D35E7F; /* Cinnamon Satin */
+  background-color: #D35E7F;
   padding: 5px 10px;
   color: #fff;
   font-size: 75%;
 }
 
-p {
-  margin-top: 25px;
-}
-
-/* Additional styles */
+/* Header Styles */
 .navbar-default {
   background-color: #fff;
 }
 
-.navbar-toggle {
-  float: right;
-  margin-right: 10px;
-}
-
-.navbar-brand {
-  float: left;
-}
-
-body {
-  font-size: 16px;
-  color: #fff;
-  background-color: #9BCDEF; /* Baby Blue Eyes */
-  font-family: 'Playwrite DE VA', cursive;
-}
-
-/* Header */
 #header-nav {
-  background-color: #D7E97B; /* Manz */
-  border-radius: 0;
-  border: 0;
+  background-color: #D7E97B;
 }
 
 #logo-img {
-  background: url('../Images/Ny's Playhouse.jpg') no-repeat;
+  background: url('../Images/Ny\'s Playhouse.jpg') no-repeat;
   width: 150px;
   height: 150px;
   margin: 10px 15px 10px 0;
 }
 
-.navbar-brand {
-  padding-top: 25px;
-}
-
-.navbar-brand h1 { /* Page Name */
-  font-family: "Playwrite DE VA", cursive;
-  color: #D35E7F; /* Cinnamon Satin */
+.navbar-brand h1 {
+  font-family: 'Playwrite DE VA', cursive;
+  color: #D35E7F;
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-
-.navbar-brand p { /* Nyla cert */
+.navbar-brand p {
   color: #000;
   text-transform: uppercase;
   font-size: .7em;
   margin-top: 15px;
 }
 
-.navbar-brand p span { /* Nyla Cert Pic */
+.navbar-brand p img {
   vertical-align: middle;
 }
 
-#nav-list {
-  margin-top: 10px;
-}
-
 #nav-list a {
-  color: #D35E7F; /* Cinnamon Satin */
+  color: #D35E7F;
   text-align: center;
 }
 
@@ -114,81 +68,11 @@ body {
   background: #E7E7E7;
 }
 
-#nav-list a span {
-  font-size: 1.8em;
+#nav-list a:active {
+  color: #D7E97B;
 }
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #D35E7F; /* Cinnamon Satin */
-}
-
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
-}
-/* End Header */
 
 .container .jumbotron {
-  box-shadow: 0 0 50px #A999EB; /* Max Blue Purple */
-  border: 2px solid #A999EB; /* Max Blue Purple */
-}
-
-/* Media Queries */
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-  .container .jumbotron {
-    background: url('../Images/Ny's Playhouse.jpg') no-repeat;
-    height: 675px;
-  }
-}
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* Header */
-  #logo-img {
-    background: url('../Images/Ny's Playhouse_med.png') no-repeat;
-    width: 100%;
-    height: 100px;
-    margin: 5px 5px 5px 0;
-  }
-  /* End Header */
-  .container .jumbotron {
-    background: url('../Images/Ny's Playhouse_992.jpg') no-repeat;
-    height: 575px;
-  }
-}
-
-/********** Small devices only **********/
-@media (max-width: 991px) {
-  .navbar-brand h1 {
-    font-size: 1.2em;
-  }
-
-  .container .jumbotron {
-    background: url('../Images/Ny's Playhouse_768.jpg') no-repeat;
-    height: 375px;
-  }
-
-  .navbar-brand p {
-    font-size: .6em;
-    margin-top: 12px;
-  }
-
-  .navbar-brand p img {
-    height: 20px;
-  }
-
-  #collapsable-nav a {
-    font-size: 1.2em;
-  }
-
-  #collapsable-nav a span {
-    font-size: 1em;
-    margin-right: 5px;
-  }
-
-  .container .jumbotron {
-    margin-top: 30px;
-    padding: 0;
-  }
+  box-shadow: 0 0 50px #A999EB;
+  border: 2px solid #A999EB;
 }
