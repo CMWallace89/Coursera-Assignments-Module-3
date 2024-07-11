@@ -3,66 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Food, LLC - Our Menu</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Food, LLC</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .dropdown-menu {
+      width: 100%;
+      text-align: center;
+    }
+    .dropdown-menu > li > a {
+      display: block;
+      width: 100%;
+    }
+    .tall-section {
+      height: 1000px;
+      background-color: #f0f0f0;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="#" class="navbar-brand">Food, LLC</a>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="nav navbar-nav">
-            <li><a href="#chicken">Chicken</a></li>
-            <li><a href="#beef">Beef</a></li>
-            <li><a href="#sushi">Sushi</a></li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Food, LLC</a>
       </div>
-    </nav>
-  </header>
-
-  <main>
-    <div class="container">
-      <h1 class="text-center">Our Menu</h1>
-      <div class="row">
-        <div class="col-md-4">
-          <div id="chicken" class="menu-item">
-            <h2>Chicken</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div id="beef" class="menu-item">
-            <h2>Beef</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div id="sushi" class="menu-item">
-            <h2>Sushi</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li class="dropdown visible-xs">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Chicken</a></li>
+              <li><a href="#">Beef</a></li>
+              <li><a href="#">Sushi</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
-  </main>
-
-  <script>
-    document.querySelectorAll('.navbar-toggle').forEach(button => {
-      button.addEventListener('click', () => {
-        const target = document.querySelector(button.dataset.target);
-        target.classList.toggle('collapse');
-      });
-    });
-  </script>
+  </nav>
+  <div class="container">
+    <h1 class="text-center">Our Menu</h1>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="tall-section"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
