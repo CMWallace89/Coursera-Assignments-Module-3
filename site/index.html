@@ -15,6 +15,10 @@
       display: block;
       width: 100%;
     }
+    .tall-section {
+      height: 1000px;
+      background-color: #f0f0f0;
+    }
   </style>
 </head>
 <body>
